@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pomoClock">
+  <head>
+    <base href="/" >
+    <title>Pomodoro Clock</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/app.js"></script>
+  </head>
+  <!--<ng-include src="'header.html'"></ng-include>-->
+  <body>
+
+    <div class="content" ng-controller="clockController">
+
+      <h1>Pomodoro Clock</h1>
+
+
+<div style="text-align: center;">
+    <span>
+    <button ng-click="ascend(num)">+</button>
+    <p>Session Length:{{num}}</p>
+    <button ng-click="descend(num)">-</button></span>
+</div>
+
+
+
+
+<div id="center">
+
+    <button id="circle" ng-click="clockActivate()">
+        <h2>Session Time</h2>
+        <h1 id="time"></h1>
+    </button>
+
+</div>
+
+
+    </div>
+
+
+  </body>
+</html>
